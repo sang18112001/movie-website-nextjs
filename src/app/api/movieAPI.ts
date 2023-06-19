@@ -1,9 +1,9 @@
 import axios from 'axios';
 import axiosClient from './axiosClient';
 import { IComment, ITypeMovies } from '../utils/types';
-const API_URL = process.env.NEXT_PUBLIC_API_URL
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-const PERSONAL_API = process.env.NEXT_PUBLIC_PERSONAL_API
+const API_URL = 'https://api.themoviedb.org/3/'
+const API_KEY = '3fd2be6f0c70a2a598f084ddfb75487c';
+const PERSONAL_API = ' https://fir-tutorial-32b97-default-rtdb.asia-southeast1.firebasedatabase.app'
 const typeMovies: ITypeMovies = {
    popularity: 'discover/movie',
    top_rated: 'movie/top_rated',
