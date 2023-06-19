@@ -1,0 +1,212 @@
+:root {
+  --primary-backrground: black;
+  --secondary-backrground: white;
+  --main-text-color: white;
+  --main-color: red;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: black;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  color: inherit;
+  padding: 0px;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.active-block {
+  display: block !important;
+}
+
+.active-hidden {
+  display: none !important;
+}
+
+.active-flex {
+  display: flex !important;
+}
+
+.active-wishList {
+  color: var(--main-color) !important;
+}
+
+.active-media {
+  border-bottom: 1px solid var(--main-color);
+}
+.active-dashboard {
+  border-left: 2px solid var(--main-color);
+  color: var(--main-color) !important;
+  background-color: #403f3f;
+}
+.account-wrong input {
+  border: 3px solid red;
+}
+.account-wrong .checkPassword {
+  display: block;
+}
+.checkPassword {
+  display: none;
+}
+.checkPassword,
+.checkEmail,
+.checkAllow {
+  color: red;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.inactive-sign {
+  opacity: 0.5;
+}
+
+a.active-menu::after {
+  width: 100% !important;
+}
+
+.wrong-account {
+  border: 3px solid red !important;
+}
+
+.circle {
+  stroke: #4cc790;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.star-checked {
+  color: yellow;
+}
+.btn-me {
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-weight: 400;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn-me:hover {
+  background: white;
+  color: var(--main-color);
+}
+
+.body-container {
+  padding: 30px 10% 0px 10%;
+}
+
+.shadow {
+  background-color: var(--secondary-backrground);
+  color: black;
+}
+
+.shadow button {
+  color: white;
+}
+
+.shadow .header-search-items {
+  background-color: white;
+}
+
+button.Mui-selected {
+  background-color: var(--main-color) !important;
+  color: white;
+}
+
+.MuiPaginationItem-ellipsis {
+  color: white !important;
+}
+
+.leftArrow {
+  display: flex !important;
+  align-items: center !important;
+  position: absolute !important;
+  left: 0px !important;
+  padding: 15px !important;
+  justify-content: center !important;
+  z-index: 1;
+}
+
+.rightArrow {
+  display: flex !important;
+  align-items: center !important;
+  position: absolute !important;
+  right: 0px !important;
+  padding: 15px !important;
+  justify-content: center !important;
+  z-index: 1;
+}
+.media-content .slick-list {
+  margin: 0px -5px;
+}
+
+.google {
+  color: #d73333;
+  border: 1px solid #d73333;
+}
+
+.facebook {
+  color: #1877f2;
+  border: 1px solid #1877f2;
+}
+
+.twitter {
+  color: #1c9cea;
+  border: 1px solid #1c9cea;
+}
+footer {
+  background-color: rgb(19 19 19);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer svg {
+  display: block;
+  font-size: 30px;
+  margin: 0px 10px;
+}

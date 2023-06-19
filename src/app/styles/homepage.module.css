@@ -1,0 +1,212 @@
+/* Popularity */
+.popularity {
+  padding: 0px;
+}
+
+.first {
+  position: relative;
+  overflow: hidden;
+  height: 650px;
+}
+
+.mainMovies {
+  height: 500px;
+}
+
+.mainMovies img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+  top: 0px;
+}
+
+.movie {
+  width: 100%;
+  height: 100%;
+  padding: 100px 10%;
+  animation: scale-display 0.5s;
+}
+
+.movieMain {
+  width: 100%;
+}
+
+.movieMain h2 {
+  font-size: 40px;
+  margin: 30px 0px;
+}
+
+.movieYearVote {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.year {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.vote {
+  font-size: 15px;
+  background-color: gray;
+  padding: 3px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.movieSlider {
+  position: absolute;
+  width: 30%;
+  z-index: 1;
+  bottom: 10px;
+  right: 20px;
+  overflow: hidden;
+}
+
+.sliderItem {
+  height: 100%;
+  padding: 10px;
+}
+
+.sliderItem img {
+  width: 100%;
+  display: block;
+  box-shadow: 0 0 5px red;
+  border-radius: 10px;
+}
+
+.opacityImage {
+  filter: brightness(0.3);
+}
+
+/* Top rated */
+.typeOfMoviesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.typeOfMoviesHeader div {
+  border-bottom: 4px solid var(--main-color);
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.topRatedMain {
+  margin: 20px 0px;
+}
+
+.topRatedBox {
+  position: relative;
+  padding: 10px;
+  height: 155px;
+}
+
+.topRatedNum {
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #555;
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 160px;
+  font-style: none;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(calc(-50% - 30px));
+  top: 0px;
+  z-index: -1;
+}
+
+.topRatedImg {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(calc(-50% + 30px));
+}
+
+.topRatedImg img {
+  height: 100%;
+}
+
+/* Now playing and Up coming */
+
+#loadMore button {
+  padding: 5px 20px;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: all ease-in 0.2s;
+}
+
+#loadMore button:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+.movieType {
+}
+
+.gridImage {
+  display: grid;
+  grid-template: auto/ repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.gridImage a:first-child {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.gridImage a:first-child > div {
+  height: 100%;
+}
+.box {
+  background: no-repeat center;
+  background-size: cover;
+  padding-top: calc(9 / 16 * 100%);
+  display: block;
+  position: relative;
+}
+
+.box div {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  text-overflow: ellipsis;
+  /* Needed to make it work */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Genres */
+.genresBox {
+  background-color: #7c7c7c33;
+  padding: 10px;
+  margin-bottom: 24px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.genresBox img {
+  height: 80px;
+}

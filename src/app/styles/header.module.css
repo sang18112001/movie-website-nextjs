@@ -1,0 +1,237 @@
+.headerWeb {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+  transition: 0.5s;
+}
+
+#menuIcon .bar {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.webLogo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.webLogo img {
+  width: 100px;
+}
+
+.headerNavbar {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5rem;
+  gap: 40px;
+  flex: 1px;
+}
+
+.headerNavbar li {
+  position: relative;
+}
+
+.headerNavbar a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.headerMenu a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  transition: 0.4s all linear;
+}
+
+
+.headerSearch {
+  position: relative;
+  flex: 1;
+}
+
+.headerSearchItems {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  padding: 0px 10px;
+  max-height: 300px;
+  color: var(--shadow-color);
+  overflow-y: scroll;
+}
+
+.headerSearchItems .item {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px 0px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.headerSearchItems .item a {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.headerSearchItems .noResults {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+}
+
+.headerSearchItems .item img {
+  width: 80px;
+  min-height: 50px;
+  object-fit: cover;
+}
+
+.headerSearchItems .itemContent {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.headerSearchItems .item .itemTitle {
+  color: var(--main-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.headerSearchItems .item .itemId {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.headerSearch input {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  opacity: 0.8;
+  outline: none;
+  border: 1px solid #d3d3d3;
+}
+
+.headerMenu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerMenu a {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.header-account {
+  position: relative;
+}
+
+.headerAccount {
+  position: relative;
+}
+
+.accountLogLogo {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+/* Account logged */
+
+
+.accountLoggedLogo {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+.accountLoggedLogo .loggedIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.accountLoggedButton {
+  padding: 10px;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+  position: absolute;
+  right: 0px;
+  top: 45px;
+  gap: 10px;
+  transform-origin: calc(100% - 20px) top;
+  animation: headerNotifyGrowth ease-in 0.3s;
+  will-change: opacity, transform;
+  display: none;
+}
+
+
+.loggedBox .loggedAccount {
+  display: flex;
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  gap: 15px;
+}
+.loggedBox .loggedDashboard {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+.loggedBox .loggedDashboard a {
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loggedBox .loggedDashboard a.log-out {
+  width: 100%;
+  color: white;
+  border: 1px solid var(--main-color);
+}
+.loggedBox .loggedDashboard a:hover {
+  color: var(--main-color);
+}
+
+.accountAvt {
+  border-radius: 50%;
+}

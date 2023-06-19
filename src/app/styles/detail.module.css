@@ -1,0 +1,242 @@
+.webBodyDetail {
+  padding: 0px 10%;
+}
+.movieContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.movieImage {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.movieImage::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.movieContent {
+  display: flex;
+  padding: 250px 10% 20px 10%;
+  z-index: 1;
+  justify-content: space-between;
+}
+.movieContent .image {
+  width: 35%;
+}
+
+.movieContent .contentImg {
+  width: 100%;
+  aspect-ratio: 3/4;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-color: darkgrey;
+}
+
+.movieContent .detail {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 20px;
+}
+
+.movieContent .subTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.movieContent .subTitle .freeIcon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #fb0;
+}
+.movieContent h1 {
+  font-size: 40px;
+  color: #fb0;
+}
+
+.movieContent .genreName {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0px;
+  height: 30px;
+}
+.movieContent .genreName p {
+  padding: 5px 16px;
+  background: red;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.titleCast {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  width: 100px;
+  border-bottom: 4px solid red;
+}
+.castsContent {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  overflow: auto;
+}
+
+.castsContent::-webkit-scrollbar {
+  height: 10px;
+}
+.castsContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.castsContent::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+.castsContent::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.cast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.castAvt {
+  width: 120px;
+  height: 130px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: darkgrey;
+}
+
+.castName {
+  margin-top: 10px;
+}
+
+.castName .originalName {
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+}
+
+.movieContent a {
+  width: max-content;
+}
+/* More infomation */
+.contentTitle {
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 10px;
+  border-left: 5px solid var(--main-color);
+}
+/* Medias */
+
+.media {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.mediaBox{
+  padding: 20px 0px;
+}
+
+.subMedia {
+  left: 0;
+  display: none;
+  transition: all ease-in 0.3s;
+  width: 100% !important;
+}
+
+.subMedia img {
+  height: 100% !important;
+}
+
+.buttonMedia{
+  cursor: pointer;
+}
+
+.imageContainer {
+  padding: 5px;
+}
+
+.imageContainer img {
+  width: 100%
+}
+/* Recommendation */
+.movieRecommendation {
+  margin-top: 20px;
+  border-bottom: 1px solid #eee;
+}
+.movieRecommendation .recommendMain {
+  padding: 20px 0px;
+}
+
+.movieRecommendation img {
+  width: 100%;
+}
+
+.recommendItem {
+  position: relative;
+}
+
+.recommendItem img {
+  width: 100%;
+}
+
+.recommendItem .itemVote {
+  position: absolute;
+  padding: 5px 10px;
+  top: 5px;
+  left: 5px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: hsl(57, 97%, 45%);
+}
+
+.recommendItem .itemName {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.recommendItem img {
+  aspect-ratio: 39/22;
+}

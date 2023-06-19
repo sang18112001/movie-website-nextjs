@@ -1,0 +1,261 @@
+.webAccountBody {
+  position: fixed;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.webAccountBody input {
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  height: 40px;
+  line-height: 50px;
+  padding: 16px 20px;
+  width: 100%;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.webAccountBody button {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 20px;
+  color: white;
+  background-color: red;
+  margin-top: 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.webAccountBody button:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.containerImage {
+   width: 100%;
+   height: 100%;
+}
+.containerImage img {
+   width: 100%;
+   opacity: 0.5;
+   object-fit: cover;
+   height: 100%;
+}
+
+.containerSign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 40px 50px 40px 50px;
+  min-width: 450px;
+}
+
+.signTitle {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.signTitle div:hover {
+  cursor: pointer;
+}
+.signInTitle,
+.signUpTitle {
+  font-size: 25px;
+  text-align: left;
+}
+
+/* Sign in  */
+
+.signInBody {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+ 
+ .signInBody .anotherSignIn {
+   text-align: center;
+   margin: 30px 0px;
+   position: relative;
+   z-index: 1;
+ }
+ 
+ .signInBody p {
+   margin: 0px auto;
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 6px;
+   padding: 5px 10px;
+   font-size: 14px;
+ }
+ 
+ .signInBody .anotherSignIn::before {
+   content: '';
+   display: block;
+   width: 100%;
+   height: 0.5px;
+   background-color: white;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: -1;
+ }
+
+ .socialTitle {
+   text-align: center;
+   margin: 10px 0px;
+   position: relative;
+ }
+ .socialTitle span {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+ 
+ .socialTitle::after {
+   content: '';
+   position: absolute;
+   height: 1px;
+   width: 100%;
+   background-color: #eee;
+   bottom: 0px;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+ }
+ 
+ .socialItems {
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+ }
+ 
+ .socialItems .item {
+   font-size: 18px;
+   width: 35px;
+   height: 35px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   cursor: pointer;
+ }
+ 
+
+ .signConverting {
+   margin-top: 10px;
+   text-align: center;
+   cursor: pointer;
+ }
+ 
+ .signConverting span {
+   display: inline-block;
+ }
+ 
+ .signConverting span::after {
+   content: '';
+   display: block;
+   width: 100%;
+   height: 0.5px;
+   background-color: #eee;
+ }
+
+ /* Wrong box sign in  */
+ .signInWrong {
+  border: 1px solid red;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.signInWrong svg {
+  font-size: 24px;
+  color: var(--main-color);
+}
+
+.signInWrong .wrongNotice .noticeTitle {
+  font-size: 18px;
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+
+.signInWrong .wrongNotice .noticeContent {
+  font-size: 13px;
+}
+
+/* Sign Up */
+
+.signUpBody label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.signUpBody .avtChoose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.signUpBody .avtChoose input {
+  height: auto;
+  line-height: 20px;
+  padding: 0px;
+  margin: 0px;
+  flex: 20%;
+  text-align: right;
+}
+
+.signUpBody .licence {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signUpBody input[type='checkbox'] {
+  padding: 0px;
+  margin: 0px;
+  width: 18px;
+  display: block;
+}
+
+.signUpBody button {
+  width: 100%;
+}
+
+.wrongBox input {
+  border: 3px solid red;
+}
+
+.checkAllow {
+  display: none;
+}
+
+.wrongBox .checkAllow {
+  display: block;
+}
+
+
+.signUpBody .checkPassword,
+.signUpBody .checkEmail,
+.signUpBody .checkAllow {
+  color: red;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.getAvatar input {
+  padding: 0px;
+  width: 120px;
+  font-size: 14px
+}
