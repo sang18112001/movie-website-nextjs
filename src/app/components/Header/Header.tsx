@@ -16,9 +16,7 @@ const Header = () => {
   const userState = useSelector(getUser);
   const { uid } = userState;
   const isBrowser = () => typeof window !== 'undefined';
-  if (isBrowser()) {
-    window.addEventListener('scroll', () => (window.scrollY > 0 ? setShadow(true) : setShadow(false)));
-  }
+  if (isBrowser()) window.addEventListener('scroll', () => (window.scrollY > 0 ? setShadow(true) : setShadow(false)));
   return (
     <header className={`${styles.headerWeb} ${shadow ? 'shadow' : ''}`}>
       <div id={styles.menuIcon}>
@@ -28,7 +26,7 @@ const Header = () => {
       </div>
       <Link href="/">
         <span className={styles.webLogo}>
-          <Image src={logo|| ""} alt="" width={100} height={50} />
+          <Image src={logo || ''} alt="" width={100} height={50} />
         </span>
       </Link>
       <ul className={styles.headerNavbar}>

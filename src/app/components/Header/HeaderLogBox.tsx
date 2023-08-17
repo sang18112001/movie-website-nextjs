@@ -7,7 +7,6 @@ import Link from 'next/link';
 
 
 const HeaderLogBox = () => {
-
   return (
     <div className={clsx(styles.headerAccount, styles.accountLog)}>
       <div className={styles.accountLogLogo}>
